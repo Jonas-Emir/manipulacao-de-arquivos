@@ -1,4 +1,5 @@
 ﻿using CentralBank;
+using CentralBank.Model;
 
 partial class Program
 {
