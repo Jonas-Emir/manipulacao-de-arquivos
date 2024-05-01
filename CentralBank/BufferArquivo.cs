@@ -22,9 +22,13 @@ partial class Program
     static void EscreverBuffer(byte[] buffer, int bytesLidos)
     {
         var utf8 = new UTF8Encoding();
-
         var texto = utf8.GetString(buffer, 0, bytesLidos);
 
+        foreach (var meuByte in buffer)
+        {
+            Console.Write(meuByte);
+            Console.Write(" ");
+        }
         Console.Write(texto);
     }
 }
